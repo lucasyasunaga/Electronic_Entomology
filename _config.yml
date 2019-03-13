@@ -1,5 +1,6 @@
 markdown: kramdown
-baseurl: "Electronic_Entomology"
+url: 'https://github.com/lucasharoldsen/Electronic_Entomology'
+baseurl: /
 exclude: ['README.md']
 permalink: pretty
 
