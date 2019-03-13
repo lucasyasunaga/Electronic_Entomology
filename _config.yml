@@ -1,5 +1,5 @@
 markdown: kramdown
-baseurl: Electronic-Entomology
+baseurl: "Electronic_Entomology"
 exclude: ['README.md']
 permalink: pretty
 
