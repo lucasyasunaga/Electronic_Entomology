@@ -1,0 +1,72 @@
+---
+layout: default
+
+---
+
+ 
+
+
+
+<h1> {{ page.title }} </h1>
+
+<div class="dataimage">
+
+<a href="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}">
+
+<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}" align="center" width="80%"></a> <br> 
+
+</div>
+
+<br>
+<audio controls> 
+	<source src="{{site.baseurl}}/assets/audio/{{page.sound}}" type="audio/wav">
+	<source src="{{site.baseurl}}/assets/audio/{{page.sound1}}" type="audio/ogg">
+						Your browser does not support the audio element.
+</audio>
+
+<br>
+<br>
+
+
+
+<table style="width:80%" align="center"
+} >
+  <tr>
+    <th>Name:</th>
+    <th>{{page.title}}</th> 
+  </tr>
+  <tr>
+    <td>Family:</td>
+    <td>{{page.family}}</td> 
+  </tr>
+  <tr>
+    <td>Species:</td>
+    <td>{{page.species}}</td> 
+  </tr>
+
+  <tr>
+    <td>Traits:</td>
+    <td>{{page.traits}}</td> 
+  </tr>
+
+  <tr>
+    <td>Habitat:</td>
+    <td>{{page.habitat}}</td> 
+  </tr>
+
+  <tr>
+    <td>Birth:</td>
+    <td>{{page.birth}}</td> 
+  </tr>
+</table>
+
+
+
+{{content}}
+
+<div class="dataimage">
+
+<a href="{{site.baseurl}}/assets/img/{{page.image2}}" alt="schimatic of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/{{page.image2}}" alt="Schimatic of {{page.title}}" align="center" width="80%"></a> <br> 
+</div>
+

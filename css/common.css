@@ -1,0 +1,206 @@
+html{
+	margin: 0;
+	padding: 0;
+	background-color: #D3F99A;
+
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 100%/1.4;
+	color: #7A0000;
+	margin-left: 0px;
+}
+
+body{
+	margin: 0;
+	
+}
+
+li {
+	list-style-type: none;
+}
+
+
+a:link {
+  color: #7A0000;
+}
+
+/* visited link */
+a:visited {
+  color: #7A0000;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+
+h1{
+	font-family: 'IBM Plex Mono', monospace;
+	color: #7A0000;
+	font-size:1.6em;
+	margin-top:35px;
+	
+}
+
+h2{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1.4em;
+	color: #7A0000;
+	font-weight: normal;
+	margin-top:35px;
+}
+h3{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 1em;
+	color: #7A0000;
+	font-weight: normal;
+	margin-top:35px;
+}
+
+h4{
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 0.8em;
+	color: #7A0000;
+	font-weight: normal;
+	
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+#container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 0;
+	padding-left: 0;
+  	text-align: center;
+  	background-color:#D3F99A;
+
+
+  	}
+#container ul{
+	margin:0;
+	padding:0;
+	 
+}
+
+.bugbox{
+
+	margin-left: 5px;	
+	margin-right: 5px;	
+	margin-top:10px;	
+	margin-bottom:10px;
+	background-color:#D3F99A;
+	text-decoration: none;
+	text-align: center;
+	width: 320px;
+	/*height:420px;*/
+	box-shadow: 1px 1px 3px;
+
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.bugbox li{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+
+.anotherbugbox{
+	
+	margin-left:10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.dataimage{
+	margin: 0 auto;
+	max-width: 600px;
+	text-align: center;
+}
+
+th, td {
+    padding: 15px;
+}
+
+
+.table{
+	display: inline-block;
+
+}
+
+
+
+footer {
+	text-align: center;
+}
+
+.foottext {
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin:0 auto;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 0.9em;
+	
+	font-weight: thin;
+	width:300px;
+
+
+}
+
+.solar{
+	background-color: #344877;
+	width: 20px;
+	height:20px;
+    left: 60px;
+    
+    border: 3px solid #ADB0B9;
+    -ms-transform: rotate(1deg); /* IE 9 */
+    -webkit-transform: rotate(1deg); /* Safari */
+    transform: rotate(1deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 40px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 10 10 10px gray; 
+    border-radius: 0px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#7A0000; 
+    border-radius: 0px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fff2d8; 
+}
+
+
+
+

@@ -1,0 +1,64 @@
+.categoryBox{
+	margin: 0 auto;
+	max-width:800px;
+	background-color:#cdff63;
+	
+
+}
+
+
+.FamilyBox{
+
+	
+	margin-top:10px;	
+	margin-bottom:10px;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	background-color: #cdff63;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.SpeciesBigBox{
+	margin-left: 5px;	
+	margin-right: 5px;	
+	margin-top:10px;	
+	margin-bottom:10px;
+	text-decoration: none;
+	text-align: center;
+	width: 90%;
+	background-color: #61f481;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.SpeciesBox{
+
+	margin-left: 5px;	
+	margin-right: 5px;	
+	margin-top:10px;	
+	margin-bottom:10px;
+	text-decoration: none;
+	text-align: center;
+	width: 90%;
+	background-color: #61f481;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.TraitsBox{
+
+	margin-left: 5px;	
+	margin-right: 5px;	
+	margin-top:10px;	
+	margin-bottom:10px;
+	text-decoration: none;
+	text-align: center;
+	width: 90%;
+	background-color: #61f4c5;
+	display: inline-block;
+	vertical-align: middle;
+}
+

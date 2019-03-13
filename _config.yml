@@ -1,0 +1,6 @@
+markdown: kramdown
+baseurl: Electronic-Entomology
+exclude: ['README.md']
+permalink: pretty
+
+

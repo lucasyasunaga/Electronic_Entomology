@@ -1,0 +1,43 @@
+
+
+<!-- <ul> -->
+
+
+		{% for bug in site.pages %}
+		  	{% if bug.show == include.show %}
+		  	   
+
+		  	
+
+		  		<div class="bugbox">
+
+		  		<div class="anotherbugbox">
+
+				<li>
+
+				
+					<a href="{{site.baseurl}}{{bug.url}}">
+					<img src="{{site.baseurl}}/assets/img/{{bug.image}}" alt="photograph of {{bug.title}}" width= "200px" align="center">
+					</a><br>
+					{{bug.title}}<br>
+					{{bug.species}}<br>
+					
+					<audio controls> 
+						<source src="{{site.baseurl}}/assets/audio/{{bug.sound}}" type="audio/wav">
+						<source src="{{site.baseurl}}/assets/audio/{{bug.sound1}}" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+					
+					
+				</li>
+
+			   </div>
+			   </div>
+				
+
+
+			  
+			{% endif %}
+		{% endfor %}
+	<!-- </ul> -->
+
