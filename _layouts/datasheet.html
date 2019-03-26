@@ -5,7 +5,7 @@ layout: default
 
  
 
-
+<div id="contentbox_center">
 
 <h1> {{ page.title }} </h1>
 
@@ -13,7 +13,7 @@ layout: default
 
 <a href="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}">
 
-<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}" align="center" width="80%"></a> <br> 
+<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}" align="center" width="100%"></a> <br> 
 
 </div>
 
@@ -29,8 +29,8 @@ layout: default
 
 
 
-<table style="width:80%" align="center"
-} >
+<table style="width:90%" align="center"
+>
   <tr>
     <th>Name:</th>
     <th>{{page.title}}</th> 
@@ -54,10 +54,15 @@ layout: default
     <td>{{page.habitat}}</td> 
   </tr>
 
+  {% if page.birth == 'ya' %}
   <tr>
     <td>Birth:</td>
-    <td>{{page.birth}}</td> 
+    <td>{{page.birth1}}</td> 
   </tr>
+					
+  {% endif %}
+
+  
 </table>
 
 
@@ -67,6 +72,18 @@ layout: default
 <div class="dataimage">
 
 <a href="{{site.baseurl}}/assets/img/{{page.image2}}" alt="schimatic of {{page.title}}">
-<img src="{{site.baseurl}}/assets/img/{{page.image2}}" alt="Schimatic of {{page.title}}" align="center" width="80%"></a> <br> 
-</div>
+<img src="{{site.baseurl}}/assets/img/{{page.image2}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
 
+
+</div>
+<br>
+<br>
+
+<div class="dataimage">
+
+<a href="{{site.baseurl}}/assets/img/{{page.image3}}" alt="schimatic of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/{{page.image3}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
+
+
+</div>
+</div> 

@@ -5,9 +5,10 @@ forsale: sale
 title: lewis 
 family: piezo
 species: schmitt
-traits: twitter - quiet singer at dusk and dawn
+traits: twitter
 habitat: loves full sun 
-birth: 2016? Rosemont, PA
+birth: ya
+birth1: 2016? Rosemont, PA
 image: lewis.png
 image2: lewis_schimatic.png
 audio: ya
@@ -17,3 +18,5 @@ sound2: lewis.ogg
 ---
 
 Lewis was found in suberb of Philadelphia.
+
+ - quiet singer at dusk and dawn
