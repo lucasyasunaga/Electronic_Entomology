@@ -18,6 +18,3 @@ sound2: lewis.ogg
 
 ---
 
-Lewis was found in suberb of Philadelphia.
-
- - quiet singer at dusk and dawn
