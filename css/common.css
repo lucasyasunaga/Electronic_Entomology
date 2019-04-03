@@ -94,10 +94,45 @@ table, th, td {
 	max-width:800px;
 	
 	padding-top: 10px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 	text-align: left;
 	background-color:#D3F99A;
+}
+
+#contentbox p{
+	text-align: left;
+}
+
+#contentbox_center{
+	margin: 0 auto;
+	max-width:800px;
+	
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+	background-color:#D3F99A;
+}
+
+#contentbox_center p{
+	text-align: center;
+	
+}
+
+#textbox{
+	margin: 0 auto;
+	max-width: 550px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#textbox2{
+	margin: 0 auto;
+	max-width: 650px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
 }
 
 .bugbox{
@@ -138,6 +173,8 @@ table, th, td {
 	margin: 0 auto;
 	max-width: 600px;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 th, td {
@@ -194,7 +231,7 @@ footer {
 
 
 ::-webkit-scrollbar {
-    width: 40px;
+    width: 60px;
 }
 /* Track */
 ::-webkit-scrollbar-track {

@@ -4,14 +4,19 @@ show: ya
 forsale: na
 title: Venus 
 family: piezo
-species: ???
+species: schmitt
 traits: ???
+grouped: na
+styled: ya
+style: ???
 habitat: ??? 
 birth: ya
-birth1: hummmm
+birth1: 20?? Baltimore MD
+image_thumb: venus_thumb.png
 image: venus.png
 image2: venus.png
 audio: na
+
 
 
 ---

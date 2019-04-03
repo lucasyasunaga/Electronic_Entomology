@@ -11,18 +11,21 @@ layout: default
 
 <div class="dataimage">
 
-<a href="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}">
+<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image}}" alt="Photograph of {{page.title}}">
 
-<img src="{{site.baseurl}}/assets/img/{{page.image}}" alt="Photograph of {{page.title}}" align="center" width="100%"></a> <br> 
+<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image}}" alt="Photograph of {{page.title}}" align="center" width="100%"></a> <br> 
 
 </div>
 
 <br>
+
+{%if page.audio == 'ya'%}
 <audio controls> 
 	<source src="{{site.baseurl}}/assets/audio/{{page.sound}}" type="audio/wav">
 	<source src="{{site.baseurl}}/assets/audio/{{page.sound1}}" type="audio/ogg">
 						Your browser does not support the audio element.
 </audio>
+{% endif %}
 
 <br>
 <br>
@@ -49,6 +52,21 @@ layout: default
     <td>{{page.traits}}</td> 
   </tr>
 
+  {% if page.grouped == 'ya' %}
+  <tr>
+    <td>Group:</td>
+    <td>{{page.group}}</td> 
+  </tr>
+  {% endif %}
+
+  {% if page.styled == 'ya' %}
+  <tr>
+    <td>Style:</td>
+    <td>{{page.style}}</td> 
+  </tr>
+  {% endif %}
+
+
   <tr>
     <td>Habitat:</td>
     <td>{{page.habitat}}</td> 
@@ -64,15 +82,18 @@ layout: default
 
   
 </table>
-
+<br><br>
 
 
 {{content}}
 
+
+<br><br>
+
 <div class="dataimage">
 
-<a href="{{site.baseurl}}/assets/img/{{page.image2}}" alt="schimatic of {{page.title}}">
-<img src="{{site.baseurl}}/assets/img/{{page.image2}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
+<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image2}}" alt="schimatic of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image2}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
 
 
 </div>
@@ -81,8 +102,8 @@ layout: default
 
 <div class="dataimage">
 
-<a href="{{site.baseurl}}/assets/img/{{page.image3}}" alt="schimatic of {{page.title}}">
-<img src="{{site.baseurl}}/assets/img/{{page.image3}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
+<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image3}}" alt="schimatic of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image3}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
 
 
 </div>

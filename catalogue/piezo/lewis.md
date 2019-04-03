@@ -9,6 +9,7 @@ traits: twitter
 habitat: loves full sun 
 birth: ya
 birth1: 2016? Rosemont, PA
+image_thumb: lewis_thumb.png
 image: lewis.png
 image2: lewis_schimatic.png
 audio: ya

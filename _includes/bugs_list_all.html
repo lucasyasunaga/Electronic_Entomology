@@ -18,10 +18,20 @@
 					{{bug.title}}<br><br>
 
 					<a href="{{site.baseurl}}{{bug.url}}">
-					<img src="{{site.baseurl}}/assets/img/{{bug.image}}" alt="photograph of {{bug.title}}" width= "280px">
+					<img src="{{site.baseurl}}/assets/img/bugs/{{bug.title}}/{{bug.image_thumb}}" alt="photograph of {{bug.title}}" width= "280px">
 					</a>
 					
-					{{bug.family}}-{{bug.species}}-{{bug.traits}}<br><br>
+					{{bug.family}}-{{bug.species}}-{{bug.traits}}<br>
+
+					{% if bug.styled == 'ya' %}
+
+					style: {{bug.style}}<br><br>
+					{% endif %}
+
+					{% if bug.grouped == 'ya' %}
+
+					group: {{bug.group}}<br><br>
+					{% endif %}
 					
 					{% if bug.audio == 'ya' %}
 					<audio controls> 
