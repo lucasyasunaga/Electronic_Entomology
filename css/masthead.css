@@ -6,9 +6,9 @@
 	font-size: 1.7em;
 }
 
-.masthead-sounder {
+.masthead-piezo {
 	padding: 1em;
-	background:#D3F99A;
+	background:#cdff63;
 	background-size:cover;
 	font-family: 'IBM Plex Mono', monospace;
 }
