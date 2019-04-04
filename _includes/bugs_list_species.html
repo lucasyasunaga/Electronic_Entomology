@@ -1,10 +1,10 @@
 
 
-<!-- <ul> -->
 
 
-		{% for bug in site.pages %}
-		  	{% if bug.show == include.show %}
+{% for bug in site.pages %}
+     {% if bug.show == include.show %}
+     	{% if bug.species == include.species %}
 		  	   
 
 		  	
@@ -15,29 +15,39 @@
 
 				<li>
 
-				
+					{{bug.title}}<br><br>
+
 					<a href="{{site.baseurl}}{{bug.url}}">
-					<img src="{{site.baseurl}}/assets/img/{{bug.image}}" alt="photograph of {{bug.title}}" width= "200px" align="center">
-					</a><br>
-					{{bug.title}}<br>
-					{{bug.species}}<br>
+					<img src="{{site.baseurl}}/assets/img/bugs/{{bug.title}}/{{bug.image_thumb}}" alt="photograph of {{bug.title}}" width= "280px" style="padding-bottom: 10px">
+					</a>
 					
+					{{bug.family}}-{{bug.species}}-{{bug.traits}}<br>
+
+					{% if bug.styled == 'ya' %}
+
+					style: {{bug.style}}<br>
+					{% endif %}
+
+					{% if bug.grouped == 'ya' %}
+
+					group: {{bug.group}}<br>
+					{% endif %}
+
+					<br>
+					
+					{% if bug.audio == 'ya' %}
 					<audio controls> 
 						<source src="{{site.baseurl}}/assets/audio/{{bug.sound}}" type="audio/wav">
 						<source src="{{site.baseurl}}/assets/audio/{{bug.sound1}}" type="audio/ogg">
 						Your browser does not support the audio element.
 					</audio>
-					
+					{%endif%}
 					
 				</li>
-
 			   </div>
+
 			   </div>
 				
-
-
-			  
-			{% endif %}
-		{% endfor %}
-	<!-- </ul> -->
-
+		{% endif %}
+	{% endif %}
+{% endfor %}
