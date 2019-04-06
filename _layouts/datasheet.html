@@ -9,6 +9,7 @@ layout: default
 
 <h1> {{ page.title }} </h1>
 
+
 <div class="dataimage">
 
 <a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image}}" alt="Photograph of {{page.title}}">
@@ -18,6 +19,19 @@ layout: default
 </div>
 
 <br>
+
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family}}/"><img src="{{site.baseurl}}/assets/img/{{page.family}}.png" alt="symbol for {{page.family}}" width= "45px" style="vertical-align:middle"></a>
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.species}}/"><img src="{{site.baseurl}}/assets/img/{{page.species}}.png" alt="symbol for {{page.species}}" width= "45px" style="vertical-align:middle"></a>
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.traits}}/"><img src="{{site.baseurl}}/assets/img/{{page.traits}}.png" alt="symbol for {{page.traits}}" width= "45px" style="vertical-align:middle"></a> 
+
+{% if page.styled == 'ya' %}
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.style}}/"><img src="{{site.baseurl}}/assets/img/{{page.style}}.png" alt="symbol for {{page.style}}" width= "45px" style="vertical-align:middle"></a>
+{% endif %}
+
+{% if page.grouped == 'ya' %}
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group}}/"><img src="{{site.baseurl}}/assets/img/{{page.group}}.png" alt="symbol for {{page.group}}" width= "45px" style="vertical-align:middle"></a>
+{% endif %}
+<br><br>
 
 {%if page.audio == 'ya'%}
 <audio controls> 
@@ -38,31 +52,31 @@ layout: default
     <th>Name:</th>
     <th>{{page.title}}</th> 
   </tr>
-  <tr>
+  <tr bgcolor=#cdff63>
     <td>Family:</td>
-    <td>{{page.family}}</td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family}}/"><img src="{{site.baseurl}}/assets/img/{{page.family}}.png" alt="symbol for {{page.family}}" width= "45px" style="vertical-align:middle">{{page.family}}</a></td> 
   </tr>
-  <tr>
+  <tr bgcolor=#61f481>
     <td>Species:</td>
-    <td>{{page.species}}</td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.species}}/"><img src="{{site.baseurl}}/assets/img/{{page.species}}.png" alt="symbol for {{page.species}}" width= "45px" style="vertical-align:middle">{{page.species}}</a></td> 
   </tr>
 
-  <tr>
+  <tr bgcolor=#61f4c5>
     <td>Traits:</td>
-    <td>{{page.traits}}</td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.traits}}/"><img src="{{site.baseurl}}/assets/img/{{page.traits}}.png" alt="symbol for {{page.traits}}" width= "45px" style="vertical-align:middle">{{page.traits}}</a></td> 
   </tr>
 
   {% if page.grouped == 'ya' %}
-  <tr>
+  <tr bgcolor=#9999ff>
     <td>Group:</td>
-    <td>{{page.group}}</td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group}}/"><img src="{{site.baseurl}}/assets/img/{{page.group}}.png" alt="symbol for {{page.group}}" width= "45px" style="vertical-align:middle">{{page.group}}</a></td> 
   </tr>
   {% endif %}
 
   {% if page.styled == 'ya' %}
-  <tr>
+  <tr bgcolor=#ff99cc>
     <td>Style:</td>
-    <td>{{page.style}}</td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.style}}/"><img src="{{site.baseurl}}/assets/img/{{page.style}}.png" alt="symbol for {{page.style}}" width= "45px" style="vertical-align:middle">{{page.style}}</a></td> 
   </tr>
   {% endif %}
 
