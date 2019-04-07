@@ -45,10 +45,15 @@
 
 					{% if bug.grouped == 'ya' %}
 
-					group: {{bug.group}}
-					<img src="{{site.baseurl}}/assets/img/{{bug.group}}.png" alt="symbol for {{bug.group}}" width= "35px" style="vertical-align:middle"></a>
-					<br>
+					<ul>
+					<li>group: {{bug.group}}
+						<img src="{{site.baseurl}}/assets/img/{{bug.group}}.png" alt="symbol for {{bug.group}}" width= "35px" style="vertical-align:middle"></a></li>
+						
+						{% if bug.grouped2 %}
+					<li>{{bug.group2}} <img src="{{site.baseurl}}/assets/img/{{bug.group2}}.png" alt="symbol for {{bug.group2}}" width= "35px" style="vertical-align:middle"></a></li>
+						{% endif %}
 					{% endif %}
+				</ul>
 					<br>
 
 

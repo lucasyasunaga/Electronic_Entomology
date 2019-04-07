@@ -29,7 +29,10 @@ layout: default
 {% endif %}
 
 {% if page.grouped == 'ya' %}
-<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group}}/"><img src="{{site.baseurl}}/assets/img/{{page.group}}.png" alt="symbol for {{page.group}}" width= "45px" style="vertical-align:middle"></a>
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group}}/"><img src="{{site.baseurl}}/assets/img/{{page.group}}.png" alt="symbol for {{page.group}}" width= "45px" style="vertical-align:middle"></a>{% endif %}
+
+{% if page.group2 %}
+<a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group2}}/"><img src="{{site.baseurl}}/assets/img/{{page.group2}}.png" alt="symbol for {{page.group2}}" width= "45px" style="vertical-align:middle"></a>
 {% endif %}
 <br><br>
 
@@ -69,7 +72,12 @@ layout: default
   {% if page.grouped == 'ya' %}
   <tr bgcolor=#9999ff>
     <td>Group:</td>
-    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group}}/"><img src="{{site.baseurl}}/assets/img/{{page.group}}.png" alt="symbol for {{page.group}}" width= "45px" style="vertical-align:middle">{{page.group}}</a></td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group}}/"><img src="{{site.baseurl}}/assets/img/{{page.group}}.png" alt="symbol for {{page.group}}" width= "45px" style="vertical-align:middle">{{page.group}}</a>
+    {% if page.group2 %}
+    <a href="{{site.baseurl}}/catalogue/categoryPage/{{page.group2}}/"><img src="{{site.baseurl}}/assets/img/{{page.group2}}.png" alt="symbol for {{page.group2}}" width= "45px" style="vertical-align:middle">{{page.group2}}</a>
+    {% endif %}
+
+    </td> 
   </tr>
   {% endif %}
 
