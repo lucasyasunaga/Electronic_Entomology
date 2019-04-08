@@ -102,6 +102,11 @@ layout: default
 					
   {% endif %}
 
+  <tr>
+    <td>Resident:</td>
+    <td>{{page.resident}}</td> 
+  </tr>
+
   
 </table>
 <br><br>
@@ -112,21 +117,44 @@ layout: default
 
 <br><br>
 
+{% if page.image2 %}
+
 <div class="dataimage">
 
 <a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image2}}" alt="schimatic of {{page.title}}">
 <img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image2}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
 
+{% endif %}
 
 </div>
-<br>
-<br>
+
+<br><br>
+{% if page.image_schm %}
 
 <div class="dataimage">
 
-<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image3}}" alt="schimatic of {{page.title}}">
-<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image3}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
-
+<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image_schm}}" alt="schimatic of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image_schm}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
+{% endif %}
 
 </div>
+<br>
+<br>
+
+{% if page.image_wire %}
+<div class="dataimage">
+
+<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image_wire}}" alt="schimatic of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image_wire}}" alt="Schimatic of {{page.title}}" align="center" width="100%"></a> <br> 
+{% endif %}
+</div>
+
+{% if page.video %}
+<div class="dataimage">
+<iframe width="560" height="315" src="{{page.video}}" frameborder="0" allowfullscreen></iframe>
+{% endif %}
+
+
+
 </div> 
+</div>

@@ -13,27 +13,54 @@
 
 		  		<div class="anotherbugbox">
 
-				<li>
+		  
 
-					{{bug.title}}<br><br>
+				<li>
+					<a href="{{site.baseurl}}{{bug.url}}">
+
+					{{bug.title}}</a>
+
+					<img src="{{site.baseurl}}/assets/img/{{bug.family}}.png" alt="symbol for {{bug.family}}" width= "35px" style="vertical-align:middle">
+					<img src="{{site.baseurl}}/assets/img/{{bug.species}}.png" alt="symbol for {{bug.species}}" width= "35px" style="vertical-align:middle">
+					<img src="{{site.baseurl}}/assets/img/{{bug.traits}}.png" alt="symbol for {{bug.traits}}" width= "35px" style="vertical-align:middle">
+				    
+
+
+
+					<br><br>
 
 					<a href="{{site.baseurl}}{{bug.url}}">
-					<img src="{{site.baseurl}}/assets/img/bugs/{{bug.title}}/{{bug.image_thumb}}" alt="photograph of {{bug.title}}" width= "280px" style="padding-bottom: 10px">
-					</a>
+					<img src="{{site.baseurl}}/assets/img/bugs/{{bug.title}}/{{bug.image_thumb}}" alt="photograph of {{bug.title}}" width= "280px" style="padding-bottom: 10px"></a>
+					
 					
 					{{bug.family}}-{{bug.species}}-{{bug.traits}}<br>
 
+
+
+
 					{% if bug.styled == 'ya' %}
 
-					style: {{bug.style}}<br>
+					style: {{bug.style}} 
+					<img src="{{site.baseurl}}/assets/img/{{bug.style}}.png" alt="symbol for {{bug.style}}" width= "35px" style="vertical-align:middle">
+					<br>
 					{% endif %}
+
+
 
 					{% if bug.grouped == 'ya' %}
 
-					group: {{bug.group}}<br>
+					<ul>
+					<li>group: {{bug.group}}
+						<img src="{{site.baseurl}}/assets/img/{{bug.group}}.png" alt="symbol for {{bug.group}}" width= "35px" style="vertical-align:middle"></li>
+						
+						{% if bug.grouped2 %}
+					<li>{{bug.group2}} <img src="{{site.baseurl}}/assets/img/{{bug.group2}}.png" alt="symbol for {{bug.group2}}" width= "35px" style="vertical-align:middle"></li>
+						{% endif %}
 					{% endif %}
-
+				</ul>
 					<br>
+
+
 					
 					{% if bug.audio == 'ya' %}
 					<audio controls> 
@@ -43,10 +70,14 @@
 					</audio>
 					{%endif%}
 					
+
 				</li>
+
 			   </div>
 
 			   </div>
+				
+
 				
 		{% endif %}
 	{% endif %}

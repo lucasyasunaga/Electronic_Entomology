@@ -1,15 +1,13 @@
 
 
-<!-- <ul> -->
 
 
-		{% for bug in site.pages %}
-		 {% if bug.show == include.show %}
-		  	{% if bug.forsale == include.forsale %}
+{% for bug in site.pages %}
+     {% if bug.show == include.show %}
+     	{% if bug.group == include.group %}
 		  	   
 
 		  	
-
 
 		  		<div class="bugbox">
 
@@ -80,12 +78,7 @@
 			   </div>
 				
 
-
-
-			  
-			{% endif %}
-			{% endif %}
-		{% endfor %}
-
-	<!-- </ul> -->
-
+				
+		{% endif %}
+	{% endif %}
+{% endfor %}
