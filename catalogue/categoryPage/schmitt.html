@@ -11,12 +11,11 @@ title: Schmitt Trigger
 
 
 <p>
-This speicy is based on a comparetor circuit called Schmitt Trigger. Schmitt trigger is a circuit used to make a heat(oscilators) of the the bugs.
+This species is based on a comparator circuit called Schmitt Trigger. Schmitt trigger is a circuit used to make a heart(oscillators) of the bugs.
 </p>
 
 <p>
-Oscillation, keeping track of time, heart beating, rhythm of experience, effect of dynamic energy flow. We see an effect like tide of ocean, our heart pumping. Oscillation is an effect of fluctuation, resistance and synthesis of energy. Filling and releasing, inhaling and exhaling, conception and articulation. 
-Flow of electrons define the punctuations of time of their body. 
+Oscillation, keeping track of time, heart beating, a rhythm of experience, an effect of dynamic energy flow. We see an effect like the tide of the ocean, our heart pumping. Oscillation is an effect of fluctuation, resistance, and synthesis of energy. Filling and releasing, inhaling and exhaling, conception and articulation. A flow of electrons define the punctuations of time of their body.
 </p>
 
 </div>
@@ -25,17 +24,18 @@ Flow of electrons define the punctuations of time of their body.
 
 
 	{% include bugs_list_species.html species='schmitt' show='ya'%}
+	<img src="{{site.baseurl}}/assets/img/parts2.png" alt="symbol for piezo" width= "300px" style="vertical-align:middle; padding-top:30px; padding-bottom:30px;">
 
 <div id="contentbox">
 <div id="textbox">
 
 <h2> 74HC14 Schmitt Trigger Inverter --- <a href="http://www.ti.com/lit/ds/symlink/sn74hc14.pdf"> data sheet</a></h2>
 
-<p> Many of bugs from this species uses common CMOS(Complementary Metal Oxide Semiconductor) chip called Schmitt Trigger Inverter. CMOS chips are logic IC(integrated circuit) chip family that has premade miniture circuit in them. Schmitt Trigger is often used to convert complex analog signals to digital loogic. Basically it can look at imput voltage and when the imput is higher than the threshold, it can say the logic is HIGH. It can also say logic is LOW when the imput voltage is below the threshold. So it can recognize the change of voltage in binary fashon. Finally, it is also an inverter circuit which means that if the imput voltage goes above the threshold it registers logic as LOW instead of HIGH.
+<p> Many of bugs from this specie use common CMOS(Complementary Metal Oxide Semiconductor) chip called Schmitt Trigger Inverter. CMOS chips are logic IC(integrated circuit) chip family that has premade miniature circuit in them. Schmitt Trigger is often used to convert complex analog signals to digital logic. Basically, it can look at an input voltage and when the input is higher than the threshold, it can say the logic is HIGH. It can also say logic is LOW when the input voltage is below the threshold. So it can recognize the change of voltage in a binary fashion. Finally, it is also an inverter circuit which means that if the input voltage goes above the threshold it registers logic as LOW instead of HIGH.
 </p>
 
 <p>
-There are 6 independent schmitt trigger inverter circuits in 74HC14 chip. By bridging input and output of the inverter
+There are 6 independent schmitt trigger inverter circuits in 74HC14 chip. By bridging input and output of the inverter with resistors and pulling input to ground, you can create an oscilator. Now you can mix these oscilators to create a unique sounds.
 
 
 	Informative and indepth article on using 74HC14 schmitt trigger inverter from Colin Mitchell --><a href="http://www.talkingelectronics.com/pay/BEC-2/Page49.html"> TALKING ELECTRONICS</a>
