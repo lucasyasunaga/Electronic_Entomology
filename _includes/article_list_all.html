@@ -1,0 +1,35 @@
+
+
+<!-- <ul> -->
+
+
+		{% for post in site.posts %}
+		  	
+		  	   
+
+		  		<a href="{{post.url}}">
+		  		<div class="postbox">
+
+		  		<div class="anotherpostbox">
+
+		  
+
+				<li>{{post.title}} </li>
+
+				<li><img src="{{site.baseurl}}/assets/img/post/{{post.title}}.png" alt="img for {{post.title}}" width= "200px" style="vertical-align:middle"> </li>
+
+				<li> {{post.discription}} </li>
+
+				
+					
+			   </div>
+
+			   </div>
+			</a>
+
+
+			  
+			{% endfor %}
+		
+	<!-- </ul> -->
+

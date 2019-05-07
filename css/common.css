@@ -166,6 +166,38 @@ table, th, td {
 }
 
 
+.postbox{
+
+	margin-left: 5px;	
+	margin-right: 5px;	
+	margin-top:10px;	
+	margin-bottom:10px;
+	background-color:#D3F99A;
+	text-decoration: none;
+	text-align: center;
+	width: 320px;
+	/*height:420px;*/
+	box-shadow: 1px 1px 1px;
+
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.postbox li{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.anotherpostbox{
+	
+	margin-left:10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
 .dataimage{
 	margin: 0 auto;
 	max-width: 600px;
