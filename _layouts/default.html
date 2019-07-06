@@ -13,18 +13,76 @@
 	
 
 </head>
+
+<script>
+ function toggleSound() {
+
+  var audioElem1 = document.getElementById('audio1');
+  var audioElem2 = document.getElementById('audio2');
+  var audioElem3 = document.getElementById('audio3');
+  var audioElem4 = document.getElementById('audio4');
+  var audioElem5 = document.getElementById('audio5');
+  if (audioElem1.paused)
+    audioElem1.play();
+  else
+    audioElem1.pause();
+
+  if (audioElem2.paused)
+    audioElem2.play();
+  else
+    audioElem2.pause();
+
+ if (audioElem3.paused)
+    audioElem3.play();
+  else
+    audioElem3.pause();
+
+ if (audioElem4.paused)
+    audioElem4.play();
+  else
+    audioElem4.pause();
+
+}
+
+if (audioElem5.paused)
+    audioElem5.play();
+  else
+    audioElem5.pause();
+
+}
+   </script>
+
+
 <body>
 
 
 
 	<header class= "masthead {{page.mastheadClass}}" >
-		<h1> <strong> Electronic Entomology</strong><br>電子昆虫学</h1>
+		<h1> <strong> Electronic Entomology</strong><br>電子昆虫学 </h1>
 		{% include nav.html navclass = 'nav-top' %}
+		<button id="player" type="button" onclick="javascript:toggleSound();"> forest</button>
+
+		<audio id="audio1"><source src="{{site.baseurl}}/assets/audio/bluewhale.wav" type="audio/mpeg"></audio>
+		<audio id="audio2"><source src="{{site.baseurl}}/assets/audio/full_sail.wav" type="audio/mpeg"></audio>
+	    <audio id="audio3"><source src="{{site.baseurl}}/assets/audio/gentle_engine.wav" type="audio/mpeg"></audio>
+		<audio id="audio4"><source src="{{site.baseurl}}/assets/audio/motorito.wav" type="audio/mpeg"></audio>
+		<audio id="audio5"><source src="{{site.baseurl}}/assets/audio/orchid_0.wav" type="audio/mpeg"></audio>
+
+
+		
+
+
+
+
+		
+		
 		
 	</header>
 
 
 	<div id="container">
+
+
 
 	{{content}}
 
