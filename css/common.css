@@ -178,7 +178,7 @@ table, th, td {
 	text-align: center;
 	width: 320px;
 	/*height:420px;*/
-	box-shadow: 1px 1px 1px;
+	box-shadow: 1px 1px 3px;
 
 	display: inline-block;
 	vertical-align: middle;
