@@ -21,6 +21,8 @@ layout: default
 <br>
 
 <a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family}}/"><img src="{{site.baseurl}}/assets/img/{{page.family}}.png" alt="symbol for {{page.family}}" width= "45px" style="vertical-align:middle"></a>
+{% if page.family2 %} <a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family2}}/"><img src="{{site.baseurl}}/assets/img/{{page.family2}}.png" alt="symbol for {{page.family2}}" width= "35px" style="vertical-align:middle"></a>{% endif %}
+
 <a href="{{site.baseurl}}/catalogue/categoryPage/{{page.species}}/"><img src="{{site.baseurl}}/assets/img/{{page.species}}.png" alt="symbol for {{page.species}}" width= "45px" style="vertical-align:middle"></a>
 <a href="{{site.baseurl}}/catalogue/categoryPage/{{page.traits}}/"><img src="{{site.baseurl}}/assets/img/{{page.traits}}.png" alt="symbol for {{page.traits}}" width= "45px" style="vertical-align:middle"></a> 
 
@@ -38,8 +40,8 @@ layout: default
 
 {%if page.audio == 'ya'%}
 <audio controls> 
-	<source src="{{site.baseurl}}/assets/audio/{{page.sound}}" type="audio/wav">
-	<source src="{{site.baseurl}}/assets/audio/{{page.sound1}}" type="audio/ogg">
+	<source src="{{site.baseurl}}/assets/audio/community/{{page.sound}}" type="audio/wav">
+	<source src="{{site.baseurl}}/assets/audio/community/{{page.sound1}}" type="audio/ogg">
 						Your browser does not support the audio element.
 </audio>
 {% endif %}
@@ -57,7 +59,9 @@ layout: default
   </tr>
   <tr bgcolor=#cdff63>
     <td>Family:</td>
-    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family}}/"><img src="{{site.baseurl}}/assets/img/{{page.family}}.png" alt="symbol for {{page.family}}" width= "45px" style="vertical-align:middle">{{page.family}}</a></td> 
+    <td><a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family}}/"><img src="{{site.baseurl}}/assets/img/{{page.family}}.png" alt="symbol for {{page.family}}" width= "45px" style="vertical-align:middle">{{page.family}}</a> 
+
+    {% if page.family2 %} <a href="{{site.baseurl}}/catalogue/categoryPage/{{page.family2}}/"><img src="{{site.baseurl}}/assets/img/{{page.family2}}.png" alt="symbol for {{page.family2}}" width= "35px" style="vertical-align:middle">{{page.family2}}</a>{% endif %}</td> 
   </tr>
   <tr bgcolor=#61f481>
     <td>Species:</td>
@@ -96,18 +100,30 @@ layout: default
   </tr>
   {% endif %}
 
+
+   {% if page.madeby %}
+  <tr>
+    <td>Made by:</td>
+    <td>{{page.madeby}}</td> 
+  </tr>
+  {% endif %}
+
+
   {% if page.birth == 'ya' %}
   <tr>
     <td>Birth:</td>
     <td>{{page.birth1}}</td> 
-  </tr>
-					
+  </tr>			
   {% endif %}
 
+
+  {% if page.resident %}
   <tr>
     <td>Resident:</td>
     <td>{{page.resident}}</td> 
   </tr>
+  {% endif %}
+
 
    {% if page.forsale == 'ya' %}
   <tr>

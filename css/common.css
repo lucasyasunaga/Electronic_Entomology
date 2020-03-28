@@ -284,4 +284,54 @@ footer {
 
 
 
+/*###################################
+############side navigation##########
+###################################*/
+
+
+.leftmenu {
+  background-color: #A8A836;
+  float:left;
+  width:25%;
+}
+
+.leftmenu h1, h3, ul, li{
+	padding-left:10px;
+}
+
+.main {
+  background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  width:75%; /* The width is 60%, by default */
+}
+
+
+
+
+
+
+/*###################################
+###############responsive############
+###################################*/
+
+* {
+  box-sizing:border-box;
+}
+
+
+@media screen and (max-width: 700px) {
+  .leftmenu, .main{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .leftmenu{
+    text-align: center;
+    padding-right:15px;
+  }
+}
+
+
+
+
+
 
