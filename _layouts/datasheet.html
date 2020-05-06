@@ -43,6 +43,16 @@ layout: default
 						Your browser does not support the audio element.
 </audio>
 {% endif %}
+<br>
+<br>
+
+{% if page.image_audio %}
+<div class="dataimage">
+<a href="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image_audio}}" alt=" spectrogram of {{page.title}}">
+<img src="{{site.baseurl}}/assets/img/bugs/{{page.title}}/{{page.image_audio}}" alt="spectrogram of {{page.title}}" align="center" width="100%"></a> <br> 
+</div>
+{% endif %}
+
 
 <br>
 <br>
