@@ -32,3 +32,20 @@ How can we incorporate more elemental effect in the body? Beyond only sensitive 
 <img src="{{site.baseurl}}/assets/img/post/acousticniche.jpg" alt="img for {{post.title}}" width= "400" style="vertical-align:middle"> 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rd5OGxaXFM8?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+
+## Update>>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6IjF31BT1qM?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+
+After a week or so of sun, rain, and wind, I revisited the site once more to check in on Flinch. As I hike coming down from a hill to the pond area I recognize the familiar beep and chirp mixed with spring peepers. The sound of spring peepers might be more related to Flinch than birds. Flinch feels quite a part of the scene here now. I am wondering if anyone or any animal notice Flinch? There are regularity of the pattern that are more consistent than other animal that gets highlighted here.
+
+In a way it sounds like flinch is responding to peepers and birds. Even Flinch's sound is not tuned for particular animal to be heard or to posses any meaning. But how could it register as? There are possibility of Flinch's call coming across as a friendly or warning, or call for mating. Who knows? It does feel like Flinch is now participating. Taking part in this zone.
+
+I saw an video of a mocking bird crying like a cycle of car alarm. What if mocking bird learned how Flinch sounded? What does that mean? Does that make it more real and alive? 
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Zd6Iy4JuGk
+?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>

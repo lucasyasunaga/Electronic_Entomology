@@ -5,6 +5,7 @@
 {% for bug in site.pages %}
      {% if bug.show == include.show %}
      	{% if bug.group == include.group %}
+     		{% if bug.group2 == include.group2 %}
 		  	   
 
 		  	
@@ -78,7 +79,7 @@
 			   </div>
 				
 
-				
+			{% endif %}	
 		{% endif %}
 	{% endif %}
 {% endfor %}
