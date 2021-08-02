@@ -4,8 +4,10 @@
 
 {% for bug in site.pages %}
      {% if bug.show == include.show %}
-     	{% if bug.group == include.group %}
-     		{% if bug.group2 == include.group2 %}
+     	{% if bug.group  == include.group %}
+
+     	
+     		
 		  	   
 
 		  	
@@ -53,12 +55,16 @@
 					<ul>
 					<li>group: {{bug.group}}
 						<img src="{{site.baseurl}}/assets/img/{{bug.group}}.png" alt="symbol for {{bug.group}}" width= "35px" style="vertical-align:middle"></li>
-						
-						{% if bug.grouped2 %}
-					<li>{{bug.group2}} <img src="{{site.baseurl}}/assets/img/{{bug.group2}}.png" alt="symbol for {{bug.group2}}" width= "35px" style="vertical-align:middle"></li>
-						{% endif %}
 					{% endif %}
-				</ul>
+
+						
+					{% if bug.grouped2 == 'ya' %}
+
+					<li>group2: {{bug.group2}} 
+						<img src="{{site.baseurl}}/assets/img/{{bug.group2}}.png" alt="symbol for {{bug.group2}}" width= "35px" style="vertical-align:middle"></li>
+					{% endif %}
+					
+				    </ul>
 					<br>
 
 
@@ -79,7 +85,7 @@
 			   </div>
 				
 
-			{% endif %}	
+			
 		{% endif %}
 	{% endif %}
 {% endfor %}

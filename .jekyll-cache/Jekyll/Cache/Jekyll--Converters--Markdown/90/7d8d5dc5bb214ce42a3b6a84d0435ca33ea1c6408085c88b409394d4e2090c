@@ -1,0 +1,32 @@
+I"�<p>In a search for new family of bugs. I was browsing on ebay looking for these small <a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=vumeter+lot&amp;_sacat=0&amp;LH_TitleDesc=0&amp;_odkw=meter+lot&amp;_osacat=0&amp;LH_TitleDesc=0"> vu meter</a>. I was inspired by <a href="http://gieskes.nl/">gieskes</a> and their use of vu meter as a percussive tool.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9VGdaDbcCrc?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>These are analogue volume unit (vu) meter that are used to visualize signal level commonly in audio equipments. Permanent magnet is in the center rotating pointer. There are coils that are around the magnet not touching but hovering. When the coil gets current through forces are created in relative to the direction of the current and magnetic field. The forces moves the pointer that are one with the coil.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ToMXyztlkyY?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>There meters are from Russia. They were rated for 150uA so I tried it with solar cells I had laying around to see it would be sufficient enough to move the pointer. It seems responsive enough. I started with using 74HC14 oscillator circuit to make the patterns of the percussion. Using 2n2222 NPN transistor, I am turning on and off the meter itself.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UL2pOa0_0gs?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>Since we have a new roommate Sam the drummer it is a perfect time to have another drummer in house.</p>
+
+<p>While meter can hit things pretty well, they were not strong enough to lift or swing things that were heavier than small piece of paper 1/2 inch square. So what to explore with this meter is,</p>
+
+<ol>
+  <li>
+    <p>What it hits – Aluminum candle holder worked quite nice as a drum. The paper also sounded very nice like a scratchy insect sound. For now I will go with paper but there will be materials to be experimented. It also has a opportunity to be a parasitic bug to be hitting object like window glass.</p>
+  </li>
+  <li>
+    <p>What circuit to interface with – In this experiment, I adopted orchid circuit (74HC14 base) to be the base of this circuit. Explosive Full sail circuit or more unstable circuit might produce some engaging effect.</p>
+  </li>
+  <li>
+    <p>Multiple to create more complex movements – There is a potential to use more than one meter to be pulling very light object with string. There might be a possibility to make a bug with very subtle and sensitive movement.</p>
+  </li>
+</ol>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KrCxsgBQne8?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>Here is flamadiddle the first drummer bug in our family.</p>
+:ET

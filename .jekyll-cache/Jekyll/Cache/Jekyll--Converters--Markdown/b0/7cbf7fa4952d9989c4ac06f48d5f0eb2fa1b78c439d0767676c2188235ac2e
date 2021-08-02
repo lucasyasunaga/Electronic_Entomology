@@ -1,0 +1,16 @@
+I"š<p>I have been thinking about physical form of the bug that can affect behaviors and characteristics. Electronic components have properties and arranging them in a certain way creates patterns. And that pattern can be further interacted through physical make up of the environment around them. System of architecture around the receptors. I watched Richard Dawkings video on development of eye.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2X1iwLqM2t0?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>Eye is an complex organ but looking at the development of the eye, it starts from some cells that are sensitive to light. The video demonstrates how the wall built up around the eye (or probably inset to the scull or face) so the light sensitive cells can tell the directions that light is coming from. Now he mentions that it is also so this animal can now tell where the predators are coming from. Here, the simple architectural iteration creates a meaning. Meaning that are now different from whether it is light or dark but where is the predator.</p>
+
+<p><img src="/assets/img/post/eye.png" alt="img for " width="400" style="vertical-align:middle" /></p>
+
+<p>In a limited complexity, maybe I can simulate this architecture for sound generating bug. I made an sphere with a hole and attached 6 photo resistors in the back of the inside of the eye ball. For this experiment I used 74HC14 schmitt trigger inverter which I use for many other bugs. I used a power supply and not the solar cells to reduce some variables. Here I am making 6 oscillators of varying frequencies with schmitt trigers, and connecting the each photoresistors as feedback resistors. I am mixing all 6 oscilatorâ€™s output to see the direction of light will result in different sounds.</p>
+
+<p><img src="/assets/img/post/eye_inside.png" alt="img for " width="400" style="vertical-align:middle" /></p>
+
+<p>Maybe the bug can have an eyeballs that can tell direction of sun. Maybe they will react to how you approach the bug.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/92qAMw8ZG3k?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+:ET
