@@ -255,6 +255,15 @@ footer {
 	height: 100%;
 }
 
+#imagebox {
+	margin: 0 auto;
+	max-width: 100px;
+	height:100px;
+	float:right;
+	z-index:-999;
+
+}
+
 
 
 

@@ -18,34 +18,12 @@
  function toggleSound() {
 
   var audioElem1 = document.getElementById('audio1');
-  var audioElem2 = document.getElementById('audio2');
-  var audioElem3 = document.getElementById('audio3');
-  var audioElem4 = document.getElementById('audio4');
-  var audioElem5 = document.getElementById('audio5');
+  
   if (audioElem1.paused)
     audioElem1.play();
   else
     audioElem1.pause();
 
-  if (audioElem2.paused)
-    audioElem2.play();
-  else
-    audioElem2.pause();
-
- if (audioElem3.paused)
-    audioElem3.play();
-  else
-    audioElem3.pause();
-
- if (audioElem4.paused)
-    audioElem4.play();
-  else
-    audioElem4.pause();
-
-if (audioElem5.paused)
-    audioElem5.play();
-  else
-    audioElem5.pause();
 
 }
    </script>
@@ -56,15 +34,25 @@ if (audioElem5.paused)
 
 
 	<header class= "masthead {{page.mastheadClass}}" >
+
+
+		<div id="imagebox">
+			<img id="randomImage" style= "width:100px;"/> 
+		</div>
+
+
 		<h1> <strong> Electronic Entomology</strong><br>電子昆虫学 </h1>
+
 		{% include nav.html navclass = 'nav-top' %}
+		
 		<button id="player" type="button" onclick="javascript:toggleSound();"> forest</button>
 
-		<audio id="audio1"><source src="{{site.baseurl}}/assets/audio/bluewhale.wav" type="audio/mpeg"></audio>
-		<audio id="audio2"><source src="{{site.baseurl}}/assets/audio/full_sail.wav" type="audio/mpeg"></audio>
-	    <audio id="audio3"><source src="{{site.baseurl}}/assets/audio/gentle_engine.wav" type="audio/mpeg"></audio>
-		<audio id="audio4"><source src="{{site.baseurl}}/assets/audio/motorito.wav" type="audio/mpeg"></audio>
-		<audio id="audio5"><source src="{{site.baseurl}}/assets/audio/orchid_0.wav" type="audio/mpeg"></audio>
+		<audio id="audio1"><source src="{{site.baseurl}}/assets/audio/forest_4_20_2023.wav" type="audio/mpeg"></audio>
+
+		<div id="imagebox">
+			<img id="randomImage" style= "width:100px;"/> 
+		</div>
+
 
 
 		
@@ -83,6 +71,35 @@ if (audioElem5.paused)
 
 	{{content}}
 
+<script>
+	function getRandomImage() {
+		var images = [
+
+		'assets/img/sun.png', 
+		'assets/img/magnetic.png', 
+		'assets/img/bigbrain.png', 
+		'assets/img/bonsai.png',
+		'assets/img/cicada.png',
+		'assets/img/clay.png',
+		'assets/img/curlyhair.png',
+		'assets/img/decay.png',
+		'assets/img/diurnal.png',
+		'assets/img/fabulous.png',
+		'assets/img/fled.png',
+		'assets/img/friza.png',
+		'assets/img/granular.png',
+		'assets/img/wind.png',];
+
+		var image = images[Math.floor(Math.random()*images.length)];
+		return image;
+	}
+
+	function displayRandomImage() {
+		var htmlImage = document.getElementById("randomImage");
+		htmlImage.src = getRandomImage();
+	}
+	displayRandomImage();
+</script>
 	
 <footer>
 	{% include nav.html navclass = 'nav-bottom' %}

@@ -1,0 +1,43 @@
+I"v<p><a href="http://www.radio-electronics.com/info/antennas/dipole/length-calculation-formula.php">On antenna length calculation</a></p>
+
+<h2 id="revisiting-experiments-from-62021-in-new-haven-ct">Revisiting Experiments from 6/2021 in New Haven, CT</h2>
+
+<p>This post is a documentation of a brief experiment on a bug with a new energy harvesting organ - radio antenna. This experiment is based on “FM snake” device developped by <a href="http://www.ericbrasseur.org/electrosmog_snake.html">Eric Brasseur</a> and adapted to be integrated to a bug.</p>
+
+<hr />
+
+<p><a href="/assets/img/post/radio_bug.jpg"> <img src="/assets/img/post/radio_bug.jpg" alt="img for " width="600" style="vertical-align:middle" />  </a></p>
+
+<p><img src="/assets/img/post/tower.jpg" alt="img for " width="600" style="vertical-align:middle" /></p>
+
+<h3 id="antenna">Antenna</h3>
+
+<p>In the article Eric demonstrats harvesting energy from FM radiotower ranging from 88 ~ 100 MHz located 1 kilometer away. It is surprising how strong the signal is. It does make sence considering how far it is trying to transmit but it is something I totaly forget when I am close to the towers. I kind of get the frear of radio waves and aluminum and magnetic shealding for your home. Not that I feel the need to do these things but remembering how strong these electrical magnetic pulses that radiates for miles penetrating through objects, I can empathise with that fear.</p>
+
+<p>It is such an available forces that is present all the time. It is interesting this technique is not populerised as much as I thought. I presume it does not produce anywhere enough current and voltage for any common electroic devices we use today. Though it did produce enough for lighting an LED light - at least 1.2V ish and only need few micro-amp.</p>
+
+<h3 id="energy-harvesting-organ">Energy Harvesting Organ</h3>
+
+<p>Here is the schematic of this organ below. Adaptation of Dipole antenna design. There are pair of shotkey diodes</p>
+
+<p><img src="/assets/img/post/snake_schematic.gif" alt="img for " width="400" style="vertical-align:middle" /> <br /></p>
+
+<p>Referenced from <a href="http://www.ericbrasseur.org/electrosmog_snake.html">http://www.ericbrasseur.org/electrosmog_snake.html</a></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cCMbY2Y4gB8?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<h2 id="materials">Materials</h2>
+
+<p>Many resistors use carbon as the main material to provide the specified value of resistance. Carbon is a semiconducting material whose conductivity can be controlled by mixing it with other materials. In the early 20th century resistors were made with carbon and ceramic and resin (maybe still the case?). I had a wood charcoal from a fireplace that I crushed up mixed with acquired powered charcoal for carbon, and clay harvested from the Eastern Shore of Maryland. I kneaded it like bread. I put the mixture on two copper wires a few millimeters apart. After it was dry, I checked the resistance. They ranged from 80K ohms to 600K ohms. Some iterations with too little carbon did not conduct at all.</p>
+
+<p><img src="/assets/img/post/resistor2.jpg" alt="img for " width="400" style="vertical-align:middle" /></p>
+
+<p>I have implemented these handmade resistors to number of bugs, and grouped under the name <a href="http://electronicentomology.com/catalogue/categoryPage/clay/">“clay”</a>.</p>
+
+<p>Bugs that has this resistors that are logged are so far, <a href="http://electronicentomology.com/catalogue/piezo/bon/">Bon</a>, <a href="http://electronicentomology.com/catalogue/piezo/chirpy/">chirpy</a>, <a href="http://electronicentomology.com/catalogue/piezo/nanashi_sateraito/">nanashi_sateraito</a>, and <a href="http://electronicentomology.com/catalogue/piezo/lucasito/">lucasisto</a>.</p>
+
+<p><img src="/assets/img/post/resistor1.jpg" alt="img for " width="400" style="vertical-align:middle" /></p>
+
+<p>Something I have noticed. The resistance of these resistors has been changing over time, it seems depends on the humidity? Exposed clay may be sensitive to the moisture and temperature of the air. This is just a hunch but might be worth experimenting more.</p>
+
+:ET

@@ -29,18 +29,26 @@
    </script>
 
 
+
 <body>
 
 
 
 	<header class= "masthead {{page.mastheadClass}}" >
+
+
+		<div id="imagebox">
+			<img id="randomImage" style= "width:50px;"/> 
+		</div>
+
+
 		<h1> <strong> Electronic Entomology</strong><br>電子昆虫学 </h1>
+
 		{% include nav.html navclass = 'nav-top' %}
+
 		<button id="player" type="button" onclick="javascript:toggleSound();"> forest</button>
 
 		<audio id="audio1"><source src="{{site.baseurl}}/assets/audio/forest_4_20_2023.wav" type="audio/mpeg"></audio>
-		
-
 
 		
 
@@ -55,11 +63,45 @@
 
 	<div id="container">
 
+		
+
+
 
 
 	{{content}}
 
 	</div>
+
+
+<script>
+	function getRandomImage() {
+		var images = [
+
+		'{{site.baseurl}}/assets/img/sun.png', 
+		'{{site.baseurl}}/assets/img/magnetic.png', 
+		'{{site.baseurl}}/assets/img/bigbrain.png', 
+		'{{site.baseurl}}/assets/img/bonsai.png',
+		'{{site.baseurl}}/assets/img/cicada.png',
+		'{{site.baseurl}}/assets/img/clay.png',
+		'{{site.baseurl}}/assets/img/curlyhair.png',
+		'{{site.baseurl}}/assets/img/decay.png',
+		'{{site.baseurl}}/assets/img/diurnal.png',
+		'{{site.baseurl}}/assets/img/fabulous.png',
+		'{{site.baseurl}}/assets/img/fled.png',
+		'{{site.baseurl}}/assets/img/friza.png',
+		'{{site.baseurl}}/assets/img/granular.png',
+		'{{site.baseurl}}/assets/img/wind.png',];
+
+		var image = images[Math.floor(Math.random()*images.length)];
+		return image;
+	}
+
+	function displayRandomImage() {
+		var htmlImage = document.getElementById("randomImage");
+		htmlImage.src = getRandomImage();
+	}
+	displayRandomImage();
+</script>
 
 <footer>
 	{% include nav.html navclass = 'nav-bottom' %}
@@ -67,6 +109,7 @@
 	<a href="https://www.instagram.com/electronicentomology/?hl=en">
 		<img src="{{site.baseurl}}/assets/img/instagram.png" alt="instagram logo" width= "100px" style="padding-bottom: 10px"></a>
 </footer> 
+
 
 </body>
 </html>
