@@ -1,0 +1,27 @@
+I"C	<h2 id="working-towards-bugs-for-baby">Working towards bugs for baby</h2>
+
+<p><img src="/assets/img/post/rattlebig.jpg" alt="img for " width="600" style="vertical-align:middle" /></p>
+
+<p>I am working on a bug for my baby to come. I was thinking of how baby can interact with bugs. In the pile of things my friend gave us for the baby there was a stuffed animal with rattley things inside them. It makes a nice sound. This gave me an idea of rattle to become a new organ for the bugs.</p>
+
+<hr />
+
+<h2 id="odradek---crumbs">Odradek - crumbs</h2>
+
+<p>There are always a pile of componetns and cut off wires and broken bits that accumilate on the conor of my work desk. Wheather they are the left over from the breadboard prototypes or replaced and discarded from a working project, they are crumbs - <a href="https://en.wikipedia.org/wiki/The_Cares_of_a_Family_Man">Odradek</a>  - useless broken off bits and pieces. Rattle element integrates the odradek back into the system, not as a working components but as odradek - pile of crumbs to be a part of system.</p>
+
+<p><img src="/assets/img/post/rattle_before.jpg" alt="img for " width="600" style="vertical-align:middle" /></p>
+
+<h2 id="capsuls">Capsuls</h2>
+
+<p>I really love this plastic capsuls. I always kept my treasures in them. This capsul is the body of the rattle element. Two exposed wires inside are bent and layed on the bottom of the capsul with some space apart. Loose capacitors, resistors, diodes and other bits can trouch each of the wires when we shake the capsul. Below video is measuring the resistance of the two poles. Depending on the chance of what is touching inside and how they are touching eachothers, the resistance is continuously changing. Multimeter is set up for measuring resistance in a scale of 1M ohm.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r-VQ-YV2Yrc?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>Next video is a conductivity test. Some components shorts out the poles. I will implement this into bugs body.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d5uddrVaXJw?rel=0&amp;controls=1&amp;showinfo=0&amp;modestbranding=1"></iframe>
+
+<p>Maybe I should make an entire bug in the capsel with many loose components, or make rattle element to be a patch wires for synth. To be continued -&gt;</p>
+
+:ET

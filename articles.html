@@ -14,7 +14,15 @@ title: Articles
 
 {% include article_list_all.html %}
 
+<div id="entirePosts">
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      {{post.date | date_to_string}} » <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a><br>  
+      <div class="description">{{ post.discription }} </div>
+    </li>
+  {% endfor %}
+</ul>
 
-
-
+</div>
