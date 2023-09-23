@@ -2,15 +2,17 @@
 
 <!-- <ul> -->
 
+{% assign pp = site.pages | sort_natural: "birth1" | reverse %} 
 
-	{% for bug in site.pages %}
+
+	{% for bug in pp %}
 		  {% if bug.show == include.show %}
 		  	   
 
 		  	
 
 		  	
-		  	<div class="bugbox">
+		  	<div class="bugbox" id="boxnumber{{bug.number}}">
 		  		
 
 		  		<div class="anotherbugbox">
